@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <form onsubmit="return false;">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+        <br>
+        <label for="address">Address: </label>
+        <input type="text" name="address" id="address" required>
+        <br>
+        <label for="address">Gender : </label>
+        <label for="address">Male : </label>
+        <input type="radio" name="gender" id="gender" value="Male" required>
+        <label for="address">Female : </label>
+        <input type="radio" name="gender" id="gender" value="Female" required>
+        <br>
+        <label for="address">Education: </label>
+        <select name="" id="edu" required>
+            <option value=""></option>
+            <option value="Matric">matric</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Bachlors">Bachlors</option>
+        </select>
+        <br>
+        <label for="address">Profession: </label>
+        <select name="" id="prof">
+            <option value=""></option>
+            <option value="SelfEmployed">SelfEmployed</option>
+            <option value="Job">Job</option>
+            <option value="UnEmployed">UnEmployed</option>
+        </select>
+        <br>
+        <input type="submit" value="Save" onclick="saveData();">
+    </form>
+    <div id="result" style="display: none;border: solid;">
+        <h1>Result</h1>
+        <!-- <label for="">Name:</label> -->
+        <p id="lbl_name"></p>
+        <br>
+        <!-- <label for="">Address:</label> -->
+        <p id="lbl_address"></p>
+        <br>
+        <!-- <label for="">Gender:</label> -->
+        <p id="lbl_gender"></p>
+        <br>
+        <!-- <label for="">Education:</label> -->
+        <p id="lbl_edu"></p>
+        <br>
+        <!-- <label for="">Profession:</label> -->
+        <p id="lbl_prof"></p>
+        <br>
+    </div>
+</body>
+</html>
